@@ -5,10 +5,10 @@ public class TelephoneBook {
         HashMap<String, List<String>> phoneBook = new HashMap<>();
 
         // Добавляем контакты в телефонную книгу
-        addContact(phoneBook, "John Doe", "123456789");
-        addContact(phoneBook, "Jane Smith", "987654321");
-        addContact(phoneBook, "John Doe", "555555555");
-        addContact(phoneBook, "Jane Smith", "111111111");
+        addContact(phoneBook, "Anna", "123456789");
+        addContact(phoneBook, "ivan", "987654321");
+        addContact(phoneBook, "Anna", "555555555");
+        addContact(phoneBook, "Ivan", "111111111");
 
         // Выводим телефонную книгу, отсортированную по убыванию числа телефонов
         printSortedPhoneBook(phoneBook);
@@ -24,7 +24,7 @@ public class TelephoneBook {
         List<Map.Entry<String, List<String>>> sortedEntries = new ArrayList<>(phoneBook.entrySet());
 
         // Сортировка по убыванию числа телефонов
-        sortedEntries.sort((entry1, entry2) -> Integer.compare(entry2.getValue().size(), entry1.getValue().size()));
+        sortedEntries.sgit remote add origin https://github.com/JuliaSukhova/javasem5.gitort((entry1, entry2) -> Integer.compare(entry2.getValue().size(), entry1.getValue().size()));
 
         // Вывод отсортированных контактов
         for (Map.Entry<String, List<String>> entry : sortedEntries) {
